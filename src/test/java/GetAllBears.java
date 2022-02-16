@@ -32,7 +32,7 @@ public class GetAllBears {
     public void ShouldGetAllBeersAbvGreater(){
         assertApiResponce(given()
                 .when()
-                .get("abv_gt=6")
+                .get("?abv_gt=6")
                 .then()
                 .statusCode(200)
                 .log().body());
